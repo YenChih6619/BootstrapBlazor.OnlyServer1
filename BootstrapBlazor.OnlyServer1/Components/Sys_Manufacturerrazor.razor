@@ -1,0 +1,37 @@
+﻿@page "/Sys_Manufacturerrazor"
+<h3>Sys_Manufacturerrazor</h3>
+
+<Row ItemsPerRow="ItemsPerRow.One">
+    <GroupBox Title="廠商設定" style="border-color:black;">
+
+
+        <Row ItemsPerRow="ItemsPerRow.Two">
+            <BootstrapInput @bind-Value="init.Manufacturer_ID" DisplayText="製造商 ID" ShowLabel="true" TValue="string" Readonly="true" />
+            <BootstrapInput @bind-Value="init.Manufacturer_Name" DisplayText="製造商名稱" ShowLabel="true" TValue="string" />
+            <BootstrapInput @bind-Value="init.Manufacturer_Desc" DisplayText="製造商簡介" ShowLabel="true" TValue="string" />
+            <BootstrapInput @bind-Value="init.Manufacturer_Origin" DisplayText="酒廠產地" ShowLabel="true" TValue="string" />
+            <BootstrapInput @bind-Value="init.Manufacturer_Tel" DisplayText="酒廠連絡電話" ShowLabel="true" TValue="string" />
+            <Row ColSpan="2">
+                <Button Size="Size.Medium"
+                        IsBlock="true"
+                        Color="Color.Success"
+                        IsOutline="true"
+                        OnClickWithoutRender="@(()=>{onSend(); StateHasChanged(); return Task.CompletedTask;})"
+                        Text="送出" />
+            </Row>
+        </Row>
+    </GroupBox>
+
+    <Table TItem="Model.Universal.SYS_Manufacturer.outParams"
+           HeaderStyle="TableHeaderStyle.Dark"
+           Items="outParams"
+           IsStriped="true">
+        <TableColumns>
+            <TableColumn @bind-Field="@context.Manufacturer_ID" Text="製造商 ID" sho />
+            <TableColumn @bind-Field="@context.Manufacturer_Name" Text="製造商名稱" />
+            <TableColumn @bind-Field="@context.Manufacturer_Origin" Text="酒商產地" />
+            <TableColumn @bind-Field="@context.Manufacturer_Desc" Text="製造商簡介" />
+            <TableColumn @bind-Field="@context.Manufacturer_Tel" Text="製造商電話" />
+        </TableColumns>
+    </Table>
+</Row>

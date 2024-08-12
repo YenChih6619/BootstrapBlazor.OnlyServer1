@@ -1,0 +1,102 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\BootstrapBlazor.OnlyServer1\\BootstrapBlazor.OnlyServer1\\BootstrapBlazor.OnlyServer1.csproj": {}
+  },
+  "projects": {
+    "E:\\BootstrapBlazor.OnlyServer1\\BootstrapBlazor.OnlyServer1\\BootstrapBlazor.OnlyServer1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\BootstrapBlazor.OnlyServer1\\BootstrapBlazor.OnlyServer1\\BootstrapBlazor.OnlyServer1.csproj",
+        "projectName": "BootstrapBlazor.OnlyServer1",
+        "projectPath": "E:\\BootstrapBlazor.OnlyServer1\\BootstrapBlazor.OnlyServer1\\BootstrapBlazor.OnlyServer1.csproj",
+        "packagesPath": "C:\\Users\\yenchihhuang\\.nuget\\packages\\",
+        "outputPath": "E:\\BootstrapBlazor.OnlyServer1\\BootstrapBlazor.OnlyServer1\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\yenchihhuang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "D:\\C_ZL\\packages\\T36": {},
+          "D:\\C_ZL\\packages\\Telerik.Documents.SpreadsheetStreaming": {},
+          "D:\\C_ZL\\packages\\Telerik.Zip": {},
+          "D:\\C_ZL\\packages\\telerik.recurrence": {},
+          "D:\\C_ZL\\packages\\telerik.ui.for.blazor": {},
+          "D:\\C_ZL\\packages\\telerik410\\telerik.ui.for.blazor.4.1.0.commercial": {},
+          "E:\\chart": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "BootstrapBlazor": {
+              "target": "Package",
+              "version": "[8.*, )"
+            },
+            "BootstrapBlazor.BarcodeGenerator": {
+              "target": "Package",
+              "version": "[0.1.1, )"
+            },
+            "BootstrapBlazor.Chart": {
+              "target": "Package",
+              "version": "[8.1.6, )"
+            },
+            "BootstrapBlazor.FontAwesome": {
+              "target": "Package",
+              "version": "[8.*, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

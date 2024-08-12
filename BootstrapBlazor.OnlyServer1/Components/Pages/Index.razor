@@ -1,0 +1,45 @@
+﻿@page "/"
+@attribute [TabItemOption(Text = "Index", Closable = false)]
+
+
+@* <PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" /> *@
+
+<style>
+    .centered-container {
+        width: 100%;
+        position:relative;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; /* 置頂 */
+    }
+
+    .responsive-image {
+        width: 100%; /* 設定寬度為容器的100% */
+        height: auto; /* 高度自動，保持等比例縮放 */
+        max-width: 600px; /* 設定圖片的最大寬度，避免圖片過大 */
+        min-width: 400px;
+    }
+</style>
+
+<SurveyPrompt Title="高雄市鹽埕區瀨南街141之7 (鹽埕第一公有市場)  營業時間: 17:00~23:00" />
+
+<div class="centered-container">
+    <div class="content">
+        <Carousel Images="@Images"
+                  Width="600"
+                  ShowControls="true"
+                  IsFade="true"
+                  PlayMode="CarouselPlayMode.AutoPlayOnload"
+                  ShowIndicators="true">
+        </Carousel>
+    </div>
+</div>
+

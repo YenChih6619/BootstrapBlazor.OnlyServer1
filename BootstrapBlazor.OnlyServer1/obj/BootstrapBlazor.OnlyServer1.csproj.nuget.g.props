@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\yenchihhuang\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages;C:\Program Files (x86)\Microsoft\Xamarin\NuGet\</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.9.2</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\yenchihhuang\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft\Xamarin\NuGet\" />
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor\8.8.2\buildTransitive\BootstrapBlazor.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor\8.8.2\buildTransitive\BootstrapBlazor.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.fontawesome\8.0.6\buildTransitive\BootstrapBlazor.FontAwesome.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.fontawesome\8.0.6\buildTransitive\BootstrapBlazor.FontAwesome.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.chart\8.1.6\buildTransitive\BootstrapBlazor.Chart.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.chart\8.1.6\buildTransitive\BootstrapBlazor.Chart.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor.barcodegenerator\0.1.1\buildTransitive\BootstrapBlazor.BarcodeGenerator.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor.barcodegenerator\0.1.1\buildTransitive\BootstrapBlazor.BarcodeGenerator.props')" />
+  </ImportGroup>
+</Project>

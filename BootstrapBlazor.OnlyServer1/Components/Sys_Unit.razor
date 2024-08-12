@@ -1,0 +1,33 @@
+﻿@page "/Sys_Unit"
+
+<Row ItemsPerRow="ItemsPerRow.One">
+    <GroupBox Title="單位設定" style="border-color:black;">
+
+        <Row ItemsPerRow="ItemsPerRow.Two">
+            <BootstrapInput @bind-Value="init.UNIT_ID" DisplayText="單位 ID" ShowLabel="true" TValue="int" Readonly="true" />
+            <BootstrapInput @bind-Value="init.UNIT_NO" DisplayText="單位名稱" ShowLabel="true" TValue="string" />
+            <BootstrapInput @bind-Value="init.UNIT_DESC" DisplayText="單位敘述" ShowLabel="true" TValue="string" />
+            <Row ColSpan="2">
+                <Button Size="Size.Medium"
+                        IsBlock="true"
+                        Color="Color.Success"
+                        IsOutline="true"
+                        OnClickWithoutRender="@(()=>{onSend(); StateHasChanged(); return Task.CompletedTask;})"
+                        Text="送出" />
+            </Row>
+        </Row>
+    </GroupBox>
+
+    <Table TItem="Model.Universal.SYS_Unit.outParams"
+           HeaderStyle="TableHeaderStyle.Dark"
+           IsBordered="true"
+           IsDetails="true"
+           Items="outParams"
+           IsStriped="true">
+        <TableColumns>
+            <TableColumn @bind-Field="@context.UNIT_ID" Text="單位 ID" />
+            <TableColumn @bind-Field="@context.UNIT_NO" Text="單位名稱" />
+            <TableColumn @bind-Field="@context.UNIT_DESC" Text="單位敘述"/>
+        </TableColumns>
+    </Table>
+</Row>

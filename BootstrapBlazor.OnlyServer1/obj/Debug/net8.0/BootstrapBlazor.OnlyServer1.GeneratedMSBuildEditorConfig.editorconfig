@@ -1,0 +1,63 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BootstrapBlazor.OnlyServer1
+build_property.RootNamespace = BootstrapBlazor.OnlyServer1
+build_property.ProjectDir = E:\BootstrapBlazor.OnlyServer1\BootstrapBlazor.OnlyServer1\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\BootstrapBlazor.OnlyServer1\BootstrapBlazor.OnlyServer1
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/BootstrapBlazor.OnlyServer1/BootstrapBlazor.OnlyServer1/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/BootstrapBlazor.OnlyServer1/BootstrapBlazor.OnlyServer1/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/BootstrapBlazor.OnlyServer1/BootstrapBlazor.OnlyServer1/Components/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/BootstrapBlazor.OnlyServer1/BootstrapBlazor.OnlyServer1/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/BootstrapBlazor.OnlyServer1/BootstrapBlazor.OnlyServer1/Components/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTaGFyZWRcU3VydmV5UHJvbXB0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/BootstrapBlazor.OnlyServer1/BootstrapBlazor.OnlyServer1/Components/Shared/Widget.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTaGFyZWRcV2lkZ2V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/BootstrapBlazor.OnlyServer1/BootstrapBlazor.OnlyServer1/Components/Sys_Manufacturerrazor.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTeXNfTWFudWZhY3R1cmVycmF6b3IucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/BootstrapBlazor.OnlyServer1/BootstrapBlazor.OnlyServer1/Components/Sys_Unit.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTeXNfVW5pdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/BootstrapBlazor.OnlyServer1/BootstrapBlazor.OnlyServer1/Components/WMS_Stock.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xXTVNfU3RvY2sucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/BootstrapBlazor.OnlyServer1/BootstrapBlazor.OnlyServer1/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/BootstrapBlazor.OnlyServer1/BootstrapBlazor.OnlyServer1/Components/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTaGFyZWRcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-m8h8vtld37

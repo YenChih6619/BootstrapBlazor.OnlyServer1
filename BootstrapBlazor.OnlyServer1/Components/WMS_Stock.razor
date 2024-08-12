@@ -1,0 +1,44 @@
+﻿@page "/WMS_Stock"
+
+<Row ItemsPerRow="ItemsPerRow.One">
+    <GroupBox Title="物料入庫" style="border-color:black;">
+        <Row ItemsPerRow="ItemsPerRow.Two">
+            <BootstrapInput @bind-Value="init.Manufacturer_ID" DisplayText="製造商 ID" ShowLabel="true" TValue="string" Readonly="true" />
+            <BootstrapInput @bind-Value="init.Lot_Name" DisplayText="產品名稱" ShowLabel="true" TValue="string" />
+            <BootstrapInput @bind-Value="init.Lot_Code" DisplayText="標籤編號" ShowLabel="true" TValue="string" />
+            <BootstrapInput @bind-Value="init.QTY_NORMAL" DisplayText="庫存數量" ShowLabel="true" TValue="decimal" />
+            <BootstrapInput @bind-Value="init.QTY_Price" DisplayText="單位價格" ShowLabel="true" TValue="decimal" />
+            <BootstrapInput @bind-Value="init.QTY_Cost" DisplayText="單位成本" ShowLabel="true" TValue="decimal" />
+            <BootstrapInput @bind-Value="init.UNIT_ID" DisplayText="單位" ShowLabel="true" TValue="int" />
+
+
+            <Row ColSpan="2">
+                <Button Size="Size.Medium"
+                        IsBlock="true"
+                        Color="Color.Success"
+                        IsOutline="true"
+                        OnClickWithoutRender="@(()=>{onSend(); StateHasChanged(); return Task.CompletedTask;})"
+                        Text="送出" />
+            </Row>
+        </Row>
+    </GroupBox>
+
+    <Table TItem="Model.Universal.WMS_Stock.outParams"
+           HeaderStyle="TableHeaderStyle.Dark"
+           Items="outParams"
+           IsStriped="true">
+        <TableColumns>
+            <TableColumn @bind-Field="@context.Manufacturer_ID" Text="製造商 ID" sho />
+            <TableColumn @bind-Field="@context.Lot_Code" Text="標籤編號">
+                <Template Context="v">
+                    <BarCodeGenerator Value="@v.Row.Lot_Code"/>
+                </Template>
+            </TableColumn>
+            <TableColumn @bind-Field="@context.Lot_Name" Text="產品名稱" />
+            <TableColumn @bind-Field="@context.QTY_NORMAL" Text="庫存數量" />
+            <TableColumn @bind-Field="@context.QTY_Price" Text="單位價格" />
+            <TableColumn @bind-Field="@context.QTY_Cost" Text="單位成本" />
+            <TableColumn @bind-Field="@context.UNIT_ID" Text="單位 ID" />
+        </TableColumns>
+    </Table>
+</Row>
